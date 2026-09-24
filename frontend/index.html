@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tablero de Misiones</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>📊 Tablero de Misiones</h1>
+        <p>API Maestro-Detalle</p>
+    </header>
+
+    <main>
+
+        <section class="estadisticas">
+
+            <div class="tarjeta">
+                <h2 id="totalEstudiantes">0</h2>
+                <p>Estudiantes</p>
+            </div>
+
+            <div class="tarjeta">
+                <h2 id="promedio">0%</h2>
+                <p>Promedio de avance</p>
+            </div>
+
+            <div class="tarjeta">
+                <h2 id="completados">0</h2>
+                <p>Alumnos al 100%</p>
+            </div>
+
+        </section>
+
+        <section class="contenedor-tabla">
+
+            <h2>Listado de estudiantes</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Carnet</th>
+                        <th>Estudiante</th>
+                        <th>Correo</th>
+                        <th>Progreso</th>
+                        <th>% Avance</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tablaEstudiantes">
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
